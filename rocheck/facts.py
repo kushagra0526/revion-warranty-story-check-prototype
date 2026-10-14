@@ -8,7 +8,7 @@ import re
 from .spoken import normalize, unit_at
 
 DTC = re.compile(r"\b([PBCU][0-3][0-9A-F]{3})\b")
-GLUED = re.compile(r"\b(\d+(?:\.\d+)?)\s?(V|psi|PSI|kPa|Nm|mm|A|%|Ω|ohms?|ft-lbs?|lb-ft|°F|deg|CCA)(?![A-Za-z])")
+GLUED = re.compile(r"\b(\d+(?:\.\d+)?)\s?(V|volts|psi|PSI|kPa|Nm|mm|A|%|Ω|ohms?|ft-lbs?|lb-ft|°F|degrees|deg|CCA)(?![A-Za-z])")
 
 CONDITIONS = {
     "cold_start": ["cold start", "first start", "in the morning", "when it's cold", "when cold", "sitting overnight", "after sitting"],
@@ -20,10 +20,12 @@ CONDITIONS = {
     "bumps": ["over bumps", "bumpy"],
     "intermittent": ["intermittent", "comes and goes", "sometimes", "on and off", "now and then"],
     "constant": ["all the time", "constant", "consistent", "every time"],
-    "mil_on": ["check engine light", "engine light", "mil ", "mil,", "mil.", "service engine soon"],
+    # "mil" alone is also shop talk for millimetre; only the lamp counts (held-out run 1 fix)
+    "mil_on": ["check engine light", "engine light", "mil on", "mil light", "mil lamp", "mil illuminated", "flashing mil",
+               "the mil ", "service engine soon"],
     "flashing": ["flashing", "blinking"],
-    "abs_light": ["abs light", "traction light", "stability light"],
-    "tpms_light": ["tire pressure light", "tpms light", "low tire light"],
+    "abs_light": ["abs light", "abs warning", "abs lamp", "traction light", "stability light"],
+    "tpms_light": ["tire pressure light", "tpms light", "low tire light", "low tire lamp"],
     "hot_day": ["hot days", "hot weather", "in the heat", "over 90"],
     "rain": ["in the rain", "when wet", "rainy"],
     "fluid_brown": ["brown fluid", "brown oil", "dark oil", "black oil"],
@@ -33,7 +35,7 @@ CONDITIONS = {
     "shakes": ["shakes", "shaking", "rough", "stumbles"],
     "noise_squeal": ["squeal", "squeak"],
     "noise_hum": ["hum", "humming", "drone", "growl"],
-    "harsh_shift": ["harsh shift", "slams", "bangs into", "hard shift"],
+    "harsh_shift": ["harsh shift", "slams", "bangs into", "hard shift", r"re:harsh\W+(?:\d-\d\W+)?(?:up)?shift"],
     "not_cold": ["not cold", "blowing warm", "warm air"],
     "smell": ["smell", "odor"],
 }
@@ -41,7 +43,8 @@ CONDITIONS = {
 
 def conditions(text):
     low = " " + text.lower() + " "
-    return {k for k, pats in CONDITIONS.items() if any(p in low for p in pats)}
+    return {k for k, pats in CONDITIONS.items()
+            if any((re.search(p[3:], low) if p.startswith("re:") else p in low) for p in pats)}
 
 
 def extract(text, spoken=False):
@@ -55,11 +58,16 @@ def extract(text, spoken=False):
     words = s.split()
     used = set()
     for i, w in enumerate(words):
-        core = w.strip(",;:()")
+        core = w.strip(",;:().")
         if re.fullmatch(r"\d+(?:\.\d+)?", core.rstrip(".")):
             num = core.rstrip(".")
             unit, n = unit_at(words, i + 1)
-            prev = " ".join(words[max(0, i - 3):i]).lower()
+            back = []
+            for w2 in reversed(words[max(0, i - 3):i]):   # keyword context stays inside the sentence
+                if w2.endswith((".", ";")):
+                    break
+                back.insert(0, w2)
+            prev = " ".join(back).lower()
             if unit and not core.endswith(".") or unit and n:
                 if unit == "miles":
                     out.append(("miles", int(float(num)), f"{num} miles"))
@@ -79,7 +87,7 @@ def extract(text, spoken=False):
                 out.append(("cyl", int(float(num)), f"cylinder {num}"))
     for m in GLUED.finditer(s):
         u = m.group(2)
-        u = {"PSI": "psi", "Ω": "ohm", "ohms": "ohm", "ohm": "ohm", "ft-lbs": "ft-lb", "ft-lb": "ft-lb", "lb-ft": "ft-lb", "°F": "deg"}.get(u, u)
+        u = {"PSI": "psi", "volts": "V", "degrees": "deg", "Ω": "ohm", "ohms": "ohm", "ohm": "ohm", "ft-lbs": "ft-lb", "ft-lb": "ft-lb", "lb-ft": "ft-lb", "°F": "deg"}.get(u, u)
         if m.group(0).count(" ") == 0:  # glued "11.8V"; spaced forms are already taken above
             out.append(("meas", (round(float(m.group(1)), 3), u), m.group(0)))
     for m in re.finditer(r"\bX(\d{1,3})\b", s):

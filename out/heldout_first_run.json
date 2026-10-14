@@ -1,0 +1,2147 @@
+{
+ "split": "heldout",
+ "ros": 400,
+ "clean": 119,
+ "families": {
+  "battery_code_invalid": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "battery_code_reused": {
+   "trust": [
+    0,
+    1
+   ],
+   "checklist": [
+    0,
+    1
+   ],
+   "exact": [
+    0,
+    1
+   ],
+   "rocheck": [
+    1,
+    1
+   ]
+  },
+  "battery_code_vin": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "causal_omitted": {
+   "trust": [
+    0,
+    27
+   ],
+   "checklist": [
+    0,
+    27
+   ],
+   "exact": [
+    0,
+    27
+   ],
+   "rocheck": [
+    27,
+    27
+   ]
+  },
+  "cause_no_dtc": {
+   "trust": [
+    0,
+    7
+   ],
+   "checklist": [
+    7,
+    7
+   ],
+   "exact": [
+    0,
+    7
+   ],
+   "rocheck": [
+    7,
+    7
+   ]
+  },
+  "ccnd_hours": {
+   "trust": [
+    0,
+    7
+   ],
+   "checklist": [
+    0,
+    7
+   ],
+   "exact": [
+    0,
+    7
+   ],
+   "rocheck": [
+    7,
+    7
+   ]
+  },
+  "ccnd_no_approval": {
+   "trust": [
+    0,
+    10
+   ],
+   "checklist": [
+    10,
+    10
+   ],
+   "exact": [
+    0,
+    10
+   ],
+   "rocheck": [
+    10,
+    10
+   ]
+  },
+  "drop_meas": {
+   "trust": [
+    0,
+    26
+   ],
+   "checklist": [
+    0,
+    26
+   ],
+   "exact": [
+    0,
+    26
+   ],
+   "rocheck": [
+    22,
+    26
+   ]
+  },
+  "hallucinated_dtc": {
+   "trust": [
+    0,
+    28
+   ],
+   "checklist": [
+    0,
+    28
+   ],
+   "exact": [
+    28,
+    28
+   ],
+   "rocheck": [
+    28,
+    28
+   ]
+  },
+  "invented_meas": {
+   "trust": [
+    0,
+    20
+   ],
+   "checklist": [
+    0,
+    20
+   ],
+   "exact": [
+    20,
+    20
+   ],
+   "rocheck": [
+    20,
+    20
+   ]
+  },
+  "j9992_no_pcode": {
+   "trust": [
+    0,
+    1
+   ],
+   "checklist": [
+    1,
+    1
+   ],
+   "exact": [
+    0,
+    1
+   ],
+   "rocheck": [
+    1,
+    1
+   ]
+  },
+  "j9992_p0700": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "missing_condition": {
+   "trust": [
+    0,
+    32
+   ],
+   "checklist": [
+    0,
+    32
+   ],
+   "exact": [
+    0,
+    32
+   ],
+   "rocheck": [
+    31,
+    32
+   ]
+  },
+  "no_punch": {
+   "trust": [
+    0,
+    29
+   ],
+   "checklist": [
+    29,
+    29
+   ],
+   "exact": [
+    0,
+    29
+   ],
+   "rocheck": [
+    29,
+    29
+   ]
+  },
+  "recap_correction": {
+   "trust": [
+    0,
+    24
+   ],
+   "checklist": [
+    0,
+    24
+   ],
+   "exact": [
+    0,
+    24
+   ],
+   "rocheck": [
+    24,
+    24
+   ]
+  },
+  "wrong_dtc_digit": {
+   "trust": [
+    0,
+    17
+   ],
+   "checklist": [
+    0,
+    17
+   ],
+   "exact": [
+    0,
+    17
+   ],
+   "rocheck": [
+    17,
+    17
+   ]
+  },
+  "wrong_meas": {
+   "trust": [
+    0,
+    18
+   ],
+   "checklist": [
+    0,
+    18
+   ],
+   "exact": [
+    0,
+    18
+   ],
+   "rocheck": [
+    12,
+    18
+   ]
+  },
+  "wrong_pn": {
+   "trust": [
+    0,
+    25
+   ],
+   "checklist": [
+    0,
+    25
+   ],
+   "exact": [
+    0,
+    25
+   ],
+   "rocheck": [
+    13,
+    25
+   ]
+  }
+ },
+ "caught": {
+  "trust": [
+   0,
+   281
+  ],
+  "checklist": [
+   47,
+   281
+  ],
+  "exact": [
+   48,
+   281
+  ],
+  "rocheck": [
+   258,
+   281
+  ]
+ },
+ "clean_flagged": {
+  "trust": 0,
+  "checklist": 0,
+  "exact": 119,
+  "rocheck": 61
+ },
+ "rocheck_defect_ros_with_extra_findings": 96,
+ "verdict_correct": {
+  "trust": 119,
+  "checklist": 166,
+  "exact": 257,
+  "rocheck": 325
+ },
+ "misses": [
+  {
+   "seed": 9001,
+   "scenario": "abs_ccnd",
+   "defect": "drop_meas",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 1150 ohm"
+    ]
+   ]
+  },
+  {
+   "seed": 9003,
+   "scenario": "trans",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0171, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9006,
+   "scenario": "ac",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "NO_PUNCH",
+     "D3150 claims 1.4 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9008,
+   "scenario": "trans",
+   "defect": "wrong_meas",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 138 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9014,
+   "scenario": "mil_ccnd",
+   "defect": "wrong_meas",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 78 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9017,
+   "scenario": "tpms",
+   "defect": "cause_no_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CAUSE_NO_DTC",
+     "cause doesn't name the stored DTC C0750"
+    ]
+   ]
+  },
+  {
+   "seed": 9021,
+   "scenario": "ac",
+   "defect": "drop_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 25 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9024,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_hours",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_HOURS",
+     "H9991 claims 0.5 h; CCND allowance is 0.1–0.3 h"
+    ]
+   ]
+  },
+  {
+   "seed": 9025,
+   "scenario": "bearing",
+   "defect": "recap_correction",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 150 ft-lb"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 2875503"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 0.3 mm"
+    ],
+    [
+     "RECAP_ONLY",
+     "correction recaps the procedure with no measurements, codes or document id"
+    ]
+   ]
+  },
+  {
+   "seed": 9027,
+   "scenario": "mil_ccnd",
+   "defect": "ccnd_hours",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CCND_HOURS",
+     "J9992 claims 0.5 h; CCND allowance is 0.1–0.3 h"
+    ]
+   ]
+  },
+  {
+   "seed": 9037,
+   "scenario": "trans",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "K6640 claims 2.0 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9040,
+   "scenario": "mil_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "J9992 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9046,
+   "scenario": "tpms",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'tpms light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9062,
+   "scenario": "trans",
+   "defect": "cause_no_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "CAUSE_NO_DTC",
+     "cause doesn't name the stored DTC P0751, P0700"
+    ]
+   ]
+  },
+  {
+   "seed": 9065,
+   "scenario": "trans",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "K6640 claims 2.0 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9069,
+   "scenario": "ac",
+   "defect": "drop_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 25 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9073,
+   "scenario": "mil_ccnd",
+   "defect": "drop_meas",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9082,
+   "scenario": "tpms",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'cold start', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9088,
+   "scenario": "trans",
+   "defect": "wrong_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 120 psi; the evidence says 90 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 90 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9093,
+   "scenario": "tpms",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "NO_PUNCH",
+     "N3800 claims 0.5 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9099,
+   "scenario": "abs_ccnd",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0171, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9100,
+   "scenario": "abs_ccnd",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says B1325, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9103,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "H9991 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9105,
+   "scenario": "bearing",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says B1325, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9109,
+   "scenario": "bearing",
+   "defect": "wrong_pn",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 31502778; the evidence says 13502778"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9113,
+   "scenario": "trans",
+   "defect": "drop_meas",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 90 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9121,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "H9991 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9123,
+   "scenario": "trans",
+   "defect": "recap_correction",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 5102236"
+    ],
+    [
+     "RECAP_ONLY",
+     "correction recaps the procedure with no measurements, codes or document id"
+    ]
+   ]
+  },
+  {
+   "seed": 9126,
+   "scenario": "abs_ccnd",
+   "defect": "recap_correction",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 3307714"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out X1"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 1150 ohm"
+    ],
+    [
+     "RECAP_ONLY",
+     "correction recaps the procedure with no measurements, codes or document id"
+    ]
+   ]
+  },
+  {
+   "seed": 9128,
+   "scenario": "bearing",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says U0100, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9138,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "H9991 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9147,
+   "scenario": "abs_ccnd",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0128, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9148,
+   "scenario": "ac",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9154,
+   "scenario": "bearing",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9156,
+   "scenario": "mil_ccnd",
+   "defect": "wrong_meas",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 78 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9158,
+   "scenario": "abs_ccnd",
+   "defect": "drop_meas",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 1150 ohm"
+    ]
+   ]
+  },
+  {
+   "seed": 9160,
+   "scenario": "trans",
+   "defect": "wrong_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 120 psi; the evidence says 90 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 90 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9162,
+   "scenario": "ac",
+   "defect": "wrong_pn",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CONTRADICTED",
+     "correction says 23533245; the evidence says 23353245"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9169,
+   "scenario": "trans",
+   "defect": "wrong_pn",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 24258953; the evidence says 24259853"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9179,
+   "scenario": "abs_ccnd",
+   "defect": "wrong_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 1325 ohm; the evidence says 1150 ohm"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 1150 ohm"
+    ]
+   ]
+  },
+  {
+   "seed": 9184,
+   "scenario": "trans",
+   "defect": "wrong_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 120 psi; the evidence says 90 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 90 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9187,
+   "scenario": "trans",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "K6640 claims 2.0 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9190,
+   "scenario": "ac",
+   "defect": "causal_omitted",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ],
+    [
+     "CAUSAL_PART_NOT_IN_STORY",
+     "causal part 23353245 condenser isn't named in the story"
+    ]
+   ]
+  },
+  {
+   "seed": 9192,
+   "scenario": "trans",
+   "defect": "drop_meas",
+   "hit": false,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9193,
+   "scenario": "mil_ccnd",
+   "defect": "wrong_meas",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 69 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9197,
+   "scenario": "oil_leak",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9198,
+   "scenario": "evap",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9204,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "H9991 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9207,
+   "scenario": "mil_ccnd",
+   "defect": "wrong_meas",
+   "hit": false,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9208,
+   "scenario": "misfire",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9209,
+   "scenario": "ac",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'constant', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9211,
+   "scenario": "bearing",
+   "defect": "wrong_pn",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 31502778; the evidence says 13502778"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9216,
+   "scenario": "ac",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'hot day', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9222,
+   "scenario": "trans",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "K6640 claims 2.0 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9226,
+   "scenario": "ac",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'hot day', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9229,
+   "scenario": "mil_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "J9992 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9235,
+   "scenario": "trans",
+   "defect": "wrong_dtc_digit",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "cause says P0754; the evidence says P0751"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9237,
+   "scenario": "ac",
+   "defect": "causal_omitted",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ],
+    [
+     "CAUSAL_PART_NOT_IN_STORY",
+     "causal part 23353245 condenser isn't named in the story"
+    ]
+   ]
+  },
+  {
+   "seed": 9241,
+   "scenario": "mil_ccnd",
+   "defect": "drop_meas",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9247,
+   "scenario": "trans",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says B1325, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9256,
+   "scenario": "abs_ccnd",
+   "defect": "invented_meas",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 14.4 V, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9257,
+   "scenario": "evap",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9261,
+   "scenario": "abs_ccnd",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "H9991 claims 0.2 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9266,
+   "scenario": "trans",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0171, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9267,
+   "scenario": "bearing",
+   "defect": "invented_meas",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 14.4 V, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9269,
+   "scenario": "ac",
+   "defect": "missing_condition",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'hot day', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9270,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_hours",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_HOURS",
+     "H9991 claims 0.5 h; CCND allowance is 0.1–0.3 h"
+    ]
+   ]
+  },
+  {
+   "seed": 9271,
+   "scenario": "ac",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ],
+    [
+     "NO_PUNCH",
+     "D3150 claims 1.4 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9275,
+   "scenario": "trans",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "K6640 claims 2.0 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9277,
+   "scenario": "abs_ccnd",
+   "defect": "recap_correction",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 1150 ohm"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out X1"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 3307714"
+    ],
+    [
+     "RECAP_ONLY",
+     "correction recaps the procedure with no measurements, codes or document id"
+    ]
+   ]
+  },
+  {
+   "seed": 9279,
+   "scenario": "bearing",
+   "defect": "wrong_meas",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 0.5 mm; the evidence says 0.3 mm"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 0.3 mm"
+    ]
+   ]
+  },
+  {
+   "seed": 9281,
+   "scenario": "abs_ccnd",
+   "defect": "ccnd_no_approval",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ],
+    [
+     "CCND_NO_APPROVAL",
+     "H9991 has no service-manager approval noted"
+    ]
+   ]
+  },
+  {
+   "seed": 9288,
+   "scenario": "bearing",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "E4100 claims 1.1 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9290,
+   "scenario": "bearing",
+   "defect": "no_punch",
+   "hit": true,
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ],
+    [
+     "NO_PUNCH",
+     "E4100 claims 1.1 h with no technician time punch"
+    ]
+   ]
+  },
+  {
+   "seed": 9292,
+   "scenario": "trans",
+   "defect": "wrong_dtc_digit",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "cause says P0753; the evidence says P0751"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9296,
+   "scenario": "trans",
+   "defect": "wrong_dtc_digit",
+   "hit": true,
+   "findings": [
+    [
+     "CONTRADICTED",
+     "cause says P0752; the evidence says P0751"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9305,
+   "scenario": "bearing",
+   "defect": "wrong_pn",
+   "hit": false,
+   "findings": []
+  },
+  {
+   "seed": 9310,
+   "scenario": "ac",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0420, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9311,
+   "scenario": "abs_ccnd",
+   "defect": "invented_meas",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 12 %, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9313,
+   "scenario": "bearing",
+   "defect": "hallucinated_dtc",
+   "hit": true,
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "cause says P0420, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  }
+ ],
+ "false_flags": [
+  {
+   "seed": 9013,
+   "scenario": "mil_ccnd",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9015,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9052,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9056,
+   "scenario": "bearing",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9061,
+   "scenario": "tpms",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9068,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9077,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9083,
+   "scenario": "mil_ccnd",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9084,
+   "scenario": "bearing",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9087,
+   "scenario": "trans",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9092,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9094,
+   "scenario": "trans",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9096,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9101,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9106,
+   "scenario": "trans",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9110,
+   "scenario": "tpms",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9111,
+   "scenario": "trans",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9115,
+   "scenario": "ac",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9122,
+   "scenario": "ac",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9129,
+   "scenario": "bearing",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9132,
+   "scenario": "trans",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9140,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9141,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9144,
+   "scenario": "trans",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9155,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9157,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9161,
+   "scenario": "mil_ccnd",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 58 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9189,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9199,
+   "scenario": "trans",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 90 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'harsh shift', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9206,
+   "scenario": "tpms",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 28 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9213,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9231,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 250 psi; the evidence says 25 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9240,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9243,
+   "scenario": "abs_ccnd",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'abs light', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9253,
+   "scenario": "bearing",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  },
+  {
+   "seed": 9259,
+   "scenario": "ac",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ]
+   ]
+  },
+  {
+   "seed": 9260,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9262,
+   "scenario": "ac",
+   "findings": [
+    [
+     "UNSUPPORTED",
+     "correction says 250 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "UNSUPPORTED",
+     "correction says 25 psi, which the technician never said and no scan/RO line shows"
+    ],
+    [
+     "MISSING_FACT",
+     "correction leaves out 58 deg"
+    ]
+   ]
+  },
+  {
+   "seed": 9264,
+   "scenario": "ac",
+   "findings": [
+    [
+     "CONTRADICTED",
+     "correction says 25 psi; the evidence says 250 psi"
+    ]
+   ]
+  },
+  {
+   "seed": 9285,
+   "scenario": "bearing",
+   "findings": [
+    [
+     "MISSING_CONDITION",
+     "complaint leaves out 'mil on', which the technician/customer described"
+    ]
+   ]
+  }
+ ]
+}

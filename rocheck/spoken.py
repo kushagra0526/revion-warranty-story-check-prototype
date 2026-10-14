@@ -17,7 +17,7 @@ UNITS = {
     "kpa": "kPa", "kilopascals": "kPa",
     "amps": "A", "amp": "A", "amperes": "A",
     "millimeters": "mm", "millimeter": "mm", "mm": "mm", "mil": "mm",
-    "degrees": "deg", "degree": "deg",
+    "degrees": "deg", "degree": "deg", "°f": "deg", "f": "deg",
     "percent": "%",
     "miles": "miles", "mi": "miles",
     "cca": "CCA",
@@ -168,8 +168,29 @@ def normalize(text):
     return s
 
 
+PRESSURE = ("pressure", "side", "psi", "tire", "fuel", "line", "rail", "boost", "vacuum")
+TORQUE = ("torque", "torqued", "bolts", "bolt", "nut", "nuts", "lug")
+
+
 def unit_at(words, k):
-    """Unit starting at words[k] -> (unit, words consumed)."""
+    """Unit starting at words[k] -> (unit, words consumed).
+    Shop slang 'pounds' alone is psi next to a pressure word and ft-lb next to a torque word
+    (held-out run 1 fix)."""
+    if k < len(words) and words[k].lower().strip(".,;:") in ("pounds", "pound", "lbs"):
+        before, after = [], []
+        for w in reversed(words[max(0, k - 8):k]):      # same sentence only
+            if w.endswith((".", ";")):
+                break
+            before.append(w)
+        for w in words[k:k + 10]:
+            after.append(w)
+            if w.endswith((".", ";")):
+                break
+        ctx = " ".join(before + after).lower()
+        if any(w in ctx for w in TORQUE):
+            return "ft-lb", 1
+        if any(w in ctx for w in PRESSURE):
+            return "psi", 1
     if k + 2 < len(words) and [w.lower().strip(".,;") for w in words[k:k + 3]] == ["cold", "cranking", "amps"]:
         return "CCA", 3
     if k + 1 < len(words):

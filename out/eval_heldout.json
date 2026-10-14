@@ -1,0 +1,372 @@
+{
+ "split": "heldout",
+ "ros": 400,
+ "clean": 119,
+ "families": {
+  "battery_code_invalid": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "battery_code_reused": {
+   "trust": [
+    0,
+    1
+   ],
+   "checklist": [
+    0,
+    1
+   ],
+   "exact": [
+    0,
+    1
+   ],
+   "rocheck": [
+    1,
+    1
+   ]
+  },
+  "battery_code_vin": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "causal_omitted": {
+   "trust": [
+    0,
+    27
+   ],
+   "checklist": [
+    0,
+    27
+   ],
+   "exact": [
+    0,
+    27
+   ],
+   "rocheck": [
+    27,
+    27
+   ]
+  },
+  "cause_no_dtc": {
+   "trust": [
+    0,
+    7
+   ],
+   "checklist": [
+    7,
+    7
+   ],
+   "exact": [
+    0,
+    7
+   ],
+   "rocheck": [
+    7,
+    7
+   ]
+  },
+  "ccnd_hours": {
+   "trust": [
+    0,
+    7
+   ],
+   "checklist": [
+    0,
+    7
+   ],
+   "exact": [
+    0,
+    7
+   ],
+   "rocheck": [
+    7,
+    7
+   ]
+  },
+  "ccnd_no_approval": {
+   "trust": [
+    0,
+    10
+   ],
+   "checklist": [
+    10,
+    10
+   ],
+   "exact": [
+    0,
+    10
+   ],
+   "rocheck": [
+    10,
+    10
+   ]
+  },
+  "drop_meas": {
+   "trust": [
+    0,
+    26
+   ],
+   "checklist": [
+    0,
+    26
+   ],
+   "exact": [
+    0,
+    26
+   ],
+   "rocheck": [
+    26,
+    26
+   ]
+  },
+  "hallucinated_dtc": {
+   "trust": [
+    0,
+    28
+   ],
+   "checklist": [
+    0,
+    28
+   ],
+   "exact": [
+    28,
+    28
+   ],
+   "rocheck": [
+    28,
+    28
+   ]
+  },
+  "invented_meas": {
+   "trust": [
+    0,
+    20
+   ],
+   "checklist": [
+    0,
+    20
+   ],
+   "exact": [
+    20,
+    20
+   ],
+   "rocheck": [
+    20,
+    20
+   ]
+  },
+  "j9992_no_pcode": {
+   "trust": [
+    0,
+    1
+   ],
+   "checklist": [
+    1,
+    1
+   ],
+   "exact": [
+    0,
+    1
+   ],
+   "rocheck": [
+    1,
+    1
+   ]
+  },
+  "j9992_p0700": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "missing_condition": {
+   "trust": [
+    0,
+    32
+   ],
+   "checklist": [
+    0,
+    32
+   ],
+   "exact": [
+    0,
+    32
+   ],
+   "rocheck": [
+    31,
+    32
+   ]
+  },
+  "no_punch": {
+   "trust": [
+    0,
+    29
+   ],
+   "checklist": [
+    29,
+    29
+   ],
+   "exact": [
+    0,
+    29
+   ],
+   "rocheck": [
+    29,
+    29
+   ]
+  },
+  "recap_correction": {
+   "trust": [
+    0,
+    24
+   ],
+   "checklist": [
+    0,
+    24
+   ],
+   "exact": [
+    0,
+    24
+   ],
+   "rocheck": [
+    24,
+    24
+   ]
+  },
+  "wrong_dtc_digit": {
+   "trust": [
+    0,
+    17
+   ],
+   "checklist": [
+    0,
+    17
+   ],
+   "exact": [
+    0,
+    17
+   ],
+   "rocheck": [
+    17,
+    17
+   ]
+  },
+  "wrong_meas": {
+   "trust": [
+    0,
+    18
+   ],
+   "checklist": [
+    0,
+    18
+   ],
+   "exact": [
+    0,
+    18
+   ],
+   "rocheck": [
+    18,
+    18
+   ]
+  },
+  "wrong_pn": {
+   "trust": [
+    0,
+    25
+   ],
+   "checklist": [
+    0,
+    25
+   ],
+   "exact": [
+    0,
+    25
+   ],
+   "rocheck": [
+    25,
+    25
+   ]
+  }
+ },
+ "caught": {
+  "trust": [
+   0,
+   281
+  ],
+  "checklist": [
+   47,
+   281
+  ],
+  "exact": [
+   48,
+   281
+  ],
+  "rocheck": [
+   280,
+   281
+  ]
+ },
+ "clean_flagged": {
+  "trust": 0,
+  "checklist": 0,
+  "exact": 119,
+  "rocheck": 0
+ },
+ "rocheck_defect_ros_with_extra_findings": 0,
+ "verdict_correct": {
+  "trust": 119,
+  "checklist": 166,
+  "exact": 257,
+  "rocheck": 399
+ },
+ "misses": [
+  {
+   "seed": 9371,
+   "scenario": "misfire",
+   "defect": "missing_condition",
+   "hit": false,
+   "findings": []
+  }
+ ],
+ "false_flags": []
+}
