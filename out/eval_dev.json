@@ -1,0 +1,346 @@
+{
+ "split": "dev",
+ "ros": 400,
+ "clean": 116,
+ "families": {
+  "battery_code_invalid": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "battery_code_reused": {
+   "trust": [
+    0,
+    1
+   ],
+   "checklist": [
+    0,
+    1
+   ],
+   "exact": [
+    0,
+    1
+   ],
+   "rocheck": [
+    1,
+    1
+   ]
+  },
+  "causal_omitted": {
+   "trust": [
+    0,
+    24
+   ],
+   "checklist": [
+    0,
+    24
+   ],
+   "exact": [
+    0,
+    24
+   ],
+   "rocheck": [
+    24,
+    24
+   ]
+  },
+  "cause_no_dtc": {
+   "trust": [
+    0,
+    10
+   ],
+   "checklist": [
+    10,
+    10
+   ],
+   "exact": [
+    0,
+    10
+   ],
+   "rocheck": [
+    10,
+    10
+   ]
+  },
+  "ccnd_hours": {
+   "trust": [
+    0,
+    5
+   ],
+   "checklist": [
+    0,
+    5
+   ],
+   "exact": [
+    0,
+    5
+   ],
+   "rocheck": [
+    5,
+    5
+   ]
+  },
+  "ccnd_no_approval": {
+   "trust": [
+    0,
+    5
+   ],
+   "checklist": [
+    5,
+    5
+   ],
+   "exact": [
+    0,
+    5
+   ],
+   "rocheck": [
+    5,
+    5
+   ]
+  },
+  "drop_meas": {
+   "trust": [
+    0,
+    24
+   ],
+   "checklist": [
+    0,
+    24
+   ],
+   "exact": [
+    0,
+    24
+   ],
+   "rocheck": [
+    24,
+    24
+   ]
+  },
+  "hallucinated_dtc": {
+   "trust": [
+    0,
+    36
+   ],
+   "checklist": [
+    0,
+    36
+   ],
+   "exact": [
+    36,
+    36
+   ],
+   "rocheck": [
+    36,
+    36
+   ]
+  },
+  "invented_meas": {
+   "trust": [
+    0,
+    27
+   ],
+   "checklist": [
+    0,
+    27
+   ],
+   "exact": [
+    27,
+    27
+   ],
+   "rocheck": [
+    27,
+    27
+   ]
+  },
+  "j9992_no_pcode": {
+   "trust": [
+    0,
+    6
+   ],
+   "checklist": [
+    6,
+    6
+   ],
+   "exact": [
+    0,
+    6
+   ],
+   "rocheck": [
+    6,
+    6
+   ]
+  },
+  "j9992_p0700": {
+   "trust": [
+    0,
+    3
+   ],
+   "checklist": [
+    0,
+    3
+   ],
+   "exact": [
+    0,
+    3
+   ],
+   "rocheck": [
+    3,
+    3
+   ]
+  },
+  "missing_condition": {
+   "trust": [
+    0,
+    32
+   ],
+   "checklist": [
+    0,
+    32
+   ],
+   "exact": [
+    0,
+    32
+   ],
+   "rocheck": [
+    32,
+    32
+   ]
+  },
+  "no_punch": {
+   "trust": [
+    0,
+    24
+   ],
+   "checklist": [
+    24,
+    24
+   ],
+   "exact": [
+    0,
+    24
+   ],
+   "rocheck": [
+    24,
+    24
+   ]
+  },
+  "recap_correction": {
+   "trust": [
+    0,
+    30
+   ],
+   "checklist": [
+    0,
+    30
+   ],
+   "exact": [
+    0,
+    30
+   ],
+   "rocheck": [
+    30,
+    30
+   ]
+  },
+  "wrong_dtc_digit": {
+   "trust": [
+    0,
+    10
+   ],
+   "checklist": [
+    0,
+    10
+   ],
+   "exact": [
+    0,
+    10
+   ],
+   "rocheck": [
+    10,
+    10
+   ]
+  },
+  "wrong_meas": {
+   "trust": [
+    0,
+    26
+   ],
+   "checklist": [
+    0,
+    26
+   ],
+   "exact": [
+    0,
+    26
+   ],
+   "rocheck": [
+    26,
+    26
+   ]
+  },
+  "wrong_pn": {
+   "trust": [
+    0,
+    18
+   ],
+   "checklist": [
+    0,
+    18
+   ],
+   "exact": [
+    0,
+    18
+   ],
+   "rocheck": [
+    18,
+    18
+   ]
+  }
+ },
+ "caught": {
+  "trust": [
+   0,
+   284
+  ],
+  "checklist": [
+   45,
+   284
+  ],
+  "exact": [
+   63,
+   284
+  ],
+  "rocheck": [
+   284,
+   284
+  ]
+ },
+ "clean_flagged": {
+  "trust": 0,
+  "checklist": 0,
+  "exact": 116,
+  "rocheck": 0
+ },
+ "rocheck_defect_ros_with_extra_findings": 0,
+ "verdict_correct": {
+  "trust": 116,
+  "checklist": 161,
+  "exact": 254,
+  "rocheck": 400
+ },
+ "misses": [],
+ "false_flags": []
+}
